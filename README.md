@@ -1,12 +1,69 @@
-# React + Vite
+# 🔢 React Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and clean **calculator UI built using React**, focused on learning **component structure**, **modular CSS**, and UI layout. The app includes a display and number pad arranged with responsive styling using **CSS Modules**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React** – Component-based architecture
+- 🎨 **CSS Modules** – Scoped styling for each component
+- 🧠 **JavaScript Logic** – Simple in-component state handling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+src/
+│
+├── components/ # Core functional components
+│ ├── ButtonsContainer.jsx # Main layout that uses Display + ButtonsContainer
+│ ├── ButtonsContainer.modules.css # Output screen
+│ ├── Display.jsx # Grid of calculator buttonsstyles/ # All CSS Modules for scoped styling
+│ ├── Display.module.css # Styling for Calculator container
+│
+├── App.jsx # Entry React component, renders <Calculator />
+├── App.module.css # ReactDOM entry point
+└── main.jsx # Optional global CSS (e.g., resets, fonts)
+
+
+---
+
+## ✨ Features
+
+- 🖥 **Clean Calculator Layout** — Split into Display and Buttons
+- 🎨 **Styled with CSS Modules** — Local styles for each part
+- 🎯 **Centered on Screen** — Layout is vertically and horizontally centered
+- 📱 **Responsive Button Grid** — Grid layout ensures exactly 3 buttons per row
+- 👩‍🎓 **Learning-Focused** — Built without extra libraries for maximum clarity
+
+---
+
+## 📦 Installation & Running
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/your-username/react-calculator.git
+cd react-calculator
+npm install
+npm run dev
+Now open http://localhost:5173/ in your browser to view the calculator.
+```
+
+What I Learned
+This project helped me practice:
+
+1. How to build a UI with reusable components
+
+2. Managing state for calculator logic using useState
+
+3. Centering layouts and button grid design
+
+4. Applying local styles using CSS Modules
+
+5. Structuring a small project cleanly and modularly
+
+
+
+
+
