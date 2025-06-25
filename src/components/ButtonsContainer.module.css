@@ -1,0 +1,49 @@
+.buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 buttons per row */
+    gap: 10px;
+    justify-items: center;
+}
+
+.button {
+    width: 45px;
+    height: 45px;
+    margin: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #e2e8f0;
+    color: #1a202c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+/* Hover and click effect */
+.button:hover {
+    background-color: #cbd5e1;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #a0aec0;
+    transform: scale(0.95);
+}
+
+/* Color overrides for special buttons */
+.button:nth-child(1) { /* C */
+    background-color: #f56565;
+    color: white;
+}
+.button:nth-child(1):hover {
+    background-color: #e53e3e;
+}
+
+.button:nth-child(14) { /* = */
+    background-color: #48bb78;
+    color: white;
+}
+.button:nth-child(14):hover {
+    background-color: #38a169;
+}
